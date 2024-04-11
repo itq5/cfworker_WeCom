@@ -40,7 +40,7 @@
     content内容为要推送的文本，支持部分html，比如a标签，其他自测
 
 ~~~
-https://wx.7ii.win/?form=text&content=【🔊消息通知】%0a🤣我发送了一个测试消息，你收到了吗？%0a👌你收到了吧%0a<a href="http://www.baidu.com">查看更多</a>)
+https://wx.7ii.win/?form=text&content=【🔊消息通知】%0a🤣我发送了一个测试消息，你收到了吗？%0a👌你收到了吧%0a<a href="http://www.baidu.com">查看更多</a>
 ~~~
 
 测试图：
