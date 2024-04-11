@@ -5,6 +5,8 @@
   代码更新：
   
   20210218： 解决#造成内容截断的问题，#默认为位置标识符，所以当你的content含有#号时，cf worke的request.url是没有#后面内容，若想发送完整的内容，需要酱content内的#进行url编码（将#全部替换成%23）
+  回行替换成 %0a
+  %替换成 %25
 
 
 
@@ -35,7 +37,7 @@
     content内容为要推送的文本，支持部分html，比如a标签，其他自测
 
 ~~~
-https://****************.workers.dev/?form=text&content=测试字体
+https://wx.7ii.win/?form=text&content=测试字体
 ~~~
 
 测试图：
@@ -47,7 +49,7 @@ https://****************.workers.dev/?form=text&content=测试字体
     content内容为media_id（需要自己上传图片到微信服务器，获得media_id，素材仅保留三天，具体api介绍：[上传临时素材 - 企业微信API (qq.com)](https://work.weixin.qq.com/api/doc/90000/90135/90253)）
 
 ~~~
-https://*****************.workers.dev/?form=photo&content=3sfsiLDF38fDvrJQ-mYTxzJPLjI1baq7SWI6h0KyeOm5_sh_oszzwI8DiKbMb-s_8
+https://wx.7ii.win/?form=photo&content=3sfsiLDF38fDvrJQ-mYTxzJPLjI1baq7SWI6h0KyeOm5_sh_oszzwI8DiKbMb-s_8
 ~~~
 
 ![](https://s3.ax1x.com/2021/02/17/y2YCZt.jpg)
@@ -61,7 +63,7 @@ https://*****************.workers.dev/?form=photo&content=3sfsiLDF38fDvrJQ-mYTxz
     务必保证是三个参数以|分隔符分开，否则无法提取
 
 ~~~~
-https://******************.workers.dev/?form=video&content=3DZrNS9ftgjSHX157nwp96EIAQHgHwh_x1_YsFuUH0irMDqNxr2IqusgK18kzujCF|测试视频|银河之上，皆为神明
+https://wx.7ii.win/?form=video&content=3DZrNS9ftgjSHX157nwp96EIAQHgHwh_x1_YsFuUH0irMDqNxr2IqusgK18kzujCF|测试视频|银河之上，皆为神明
 ~~~~
 
 ![](https://s3.ax1x.com/2021/02/17/y2YNLR.jpg)
@@ -73,7 +75,7 @@ https://******************.workers.dev/?form=video&content=3DZrNS9ftgjSHX157nwp9
     同photo， content内容为media_id（没有测试图，垃圾接口仅支持amr格式语音，懒得搞）
 
 ~~~
-https://******************.workers.dev/?form=voice&content=**********
+https://wx.7ii.win/?form=voice&content=**********
 ~~~
 
 
@@ -85,7 +87,7 @@ https://******************.workers.dev/?form=voice&content=**********
     描述内容支持部分html
 
 ~~~
-https://*****************.workers.dev/?form=textcard&content=欢迎来到hostloc|还有这里只探讨主机相关话题，其他无关言论不要在此发表，否则浪费的是版主们的时间，还有你们的ID，更重要得是会浪费你们的打字时间。此地非IDC的公告区。
+https://wx.7ii.win/?form=textcard&content=欢迎来到hostloc|还有这里只探讨主机相关话题，其他无关言论不要在此发表，否则浪费的是版主们的时间，还有你们的ID，更重要得是会浪费你们的打字时间。此地非IDC的公告区。
 |https://www.hostloc.com/forum-45-1.html
 ~~~
 
@@ -98,7 +100,7 @@ https://*****************.workers.dev/?form=textcard&content=欢迎来到hostloc
     同photo，需上传文件到微信服务器，content内容为media_id
 
     ~~~
-    https://****************.workers.dev/?form=file&content=3qddaGll_yvGF5Sa4PQFcc525VvxsgZSLY6jR2b2j0i0
+    https://wx.7ii.win/?form=file&content=3qddaGll_yvGF5Sa4PQFcc525VvxsgZSLY6jR2b2j0i0
     ~~~
 
 ![](https://s3.ax1x.com/2021/02/17/y2UPd1.jpg)
@@ -110,7 +112,7 @@ https://*****************.workers.dev/?form=textcard&content=欢迎来到hostloc
     发送内容微信端不支持，仅支持企业微信
 
 ~~~
-https://******************.workers.dev/?form=markdown&content=markdown内容
+https://wx.7ii.win/?form=markdown&content=markdown内容
 ~~~
 
 8. 推送photo_text（可取代推送图片）
@@ -120,7 +122,7 @@ https://******************.workers.dev/?form=markdown&content=markdown内容
     需要先把图片上传到图床获得图片链接
 
 ~~~
-https://********************.workers.dev/?form=photo_text&content=欢迎来到hostloc|这是一个跳向hostloc的图片|https://www.hostloc.com/forum-45-1.html|https://s3.ax1x.com/2021/02/17/y2U7lD.jpg
+https://wx.7ii.win/?form=photo_text&content=欢迎来到hostloc|这是一个跳向hostloc的图片|https://www.hostloc.com/forum-45-1.html|https://s3.ax1x.com/2021/02/17/y2U7lD.jpg
 ~~~
 
 ![](https://s3.ax1x.com/2021/02/17/y2a37R.jpg)
@@ -128,7 +130,7 @@ https://********************.workers.dev/?form=photo_text&content=欢迎来到ho
 友情提示：前三个参数设置为空格，约等于发送图片（就是图片布局有点别扭）
 
 ~~~
-https://*********************.workers.dev/?form=photo_text&content= | | |https://s3.ax1x.com/2021/02/17/y20sE9.jpg
+https://wx.7ii.win/?form=photo_text&content= | | |https://s3.ax1x.com/2021/02/17/y20sE9.jpg
 ~~~
 
 ![](https://s3.ax1x.com/2021/02/17/y20huD.jpg)
