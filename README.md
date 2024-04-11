@@ -49,7 +49,7 @@ https://wx.7ii.win/?form=text&content=【🔊消息通知】%0a🤣我发送了�
 
 2. 推送photo（不建议使用，下文有替代方法）
 
-    content内容为media_id（需要自己上传图片到微信服务器，获得media_id，素材仅保留三天，具体api介绍：[上传临时素材 - 企业微信API (qq.com)](https://work.weixin.qq.com/api/doc/90000/90135/90253)）
+    content内容为media_id（需要自己上传图片到微信服务器，获得media_id，素材仅保留三天，具体api介绍：[上传临时素材 - 企业微信API (qq.com)](https://work.weixin.qq.com/api/doc/90000/90135/90253)
 
 ~~~
 https://wx.7ii.win/?form=photo&content=3sfsiLDF38fDvrJQ-mYTxzJPLjI1baq7SWI6h0KyeOm5_sh_oszzwI8DiKbMb-s_8
