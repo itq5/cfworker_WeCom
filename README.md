@@ -101,8 +101,23 @@ https://wx.7ii.win/?form=voice&content=**********
     描述内容支持部分html
 
 ~~~
-https://wx.7ii.win/?form=textcard&content=欢迎来到hostloc|还有这里只探讨主机相关话题，其他无关言论不要在此发表，否则浪费的是版主们的时间，还有你们的ID，更重要得是会浪费你们的打字时间。此地非IDC的公告区。
-|https://www.hostloc.com/forum-45-1.html
+|https://www.hostloc.com/forum-45-1.html](https://wx.7ii.win/?form=textcard&content=
+📢消息通知|
+%0a
+┏━━━━━━━━━━━━━━━━━━━┓%0a
+┣1️⃣ 设备类型:	    演示设备━━━━━━━━┫
+%0a 
+┣2️⃣ 来源地址:    192.168.0.0━━━━━━━┫
+%0a 
+┣3️⃣ 通知内容:	    测试的━━━━━━━━━┫
+%0a
+┃                                                                 ┃
+%0a
+┣⏰ 当前时间:	    2024-04-11 23:27:19━━━┫
+%0a
+┗━━━━━━━━━━━━━━━━━━━┛%0a
+👉点击查看更多👈
+|www.baidu.com)
 ~~~
 
 ![](https://s3.ax1x.com/2021/02/17/y2tg9U.jpg)
